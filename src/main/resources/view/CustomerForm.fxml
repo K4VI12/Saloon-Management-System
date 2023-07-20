@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="900.0" prefWidth="1440.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gsn.controller.CustomerFormController">
+   <children>
+      <Pane layoutX="90.0" layoutY="141.0" prefHeight="368.0" prefWidth="591.0" style="-fx-background-color: LIGHTBLUE;">
+         <children>
+            <JFXTextField fx:id="firstnametxt" alignment="TOP_LEFT" focusColor="#6f6d60" layoutX="82.0" layoutY="48.0" prefHeight="30.0" prefWidth="177.0" promptText="First Name" unFocusColor="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font></JFXTextField>
+            <JFXTextField fx:id="secondnametxt" focusColor="#6f6d60" layoutX="332.0" layoutY="48.0" prefHeight="30.0" prefWidth="177.0" promptText="Second Name" unFocusColor="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font></JFXTextField>
+            <JFXTextField fx:id="emailtxt" alignment="TOP_LEFT" focusColor="#6f6d60" layoutX="82.0" layoutY="108.0" prefHeight="30.0" prefWidth="177.0" promptText="Email" unFocusColor="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font></JFXTextField>
+            <JFXTextField fx:id="addresstxt" focusColor="#6f6d60" layoutX="82.0" layoutY="231.0" prefHeight="30.0" prefWidth="177.0" promptText="Address" unFocusColor="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font></JFXTextField>
+            <JFXTextField fx:id="phonenumbertxt" alignment="TOP_LEFT" focusColor="#6f6d60" layoutX="82.0" layoutY="172.0" prefHeight="30.0" prefWidth="177.0" promptText="Phone Number" unFocusColor="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font></JFXTextField>
+            <JFXTextField fx:id="customeridtxt" focusColor="#6f6d60" layoutX="332.0" layoutY="172.0" prefHeight="30.0" prefWidth="177.0" promptText="Customer id" unFocusColor="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font></JFXTextField>
+            <JFXTextField fx:id="emailtxt1" alignment="TOP_LEFT" focusColor="#6f6d60" layoutX="332.0" layoutY="231.0" prefHeight="30.0" prefWidth="177.0" promptText="City" unFocusColor="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font></JFXTextField>
+            <JFXButton fx:id="savebtn" layoutX="140.0" layoutY="313.0" onAction="#savebtnonaction" prefHeight="30.0" prefWidth="72.0" style="-fx-background-color: white;" text="SAVE">
+               <font>
+                  <Font size="13.0" />
+               </font></JFXButton>
+            <JFXTextField fx:id="nictxt" alignment="TOP_LEFT" focusColor="#6f6d60" layoutX="332.0" layoutY="108.0" prefHeight="30.0" prefWidth="177.0" promptText="NIC" unFocusColor="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font></JFXTextField>
+            <JFXButton fx:id="deletebtn" layoutX="228.0" layoutY="313.0" onAction="#deletebtnonaction" prefHeight="25.0" prefWidth="72.0" style="-fx-background-color: GRAY;" text="DELETE" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font></JFXButton>
+            <JFXButton fx:id="updatebtn" layoutX="318.0" layoutY="313.0" onAction="#updatebtnonaction" prefHeight="25.0" prefWidth="72.0" style="-fx-background-color: lightpink;" text="UPDATE">
+               <font>
+                  <Font size="13.0" />
+               </font></JFXButton>
+            <Button layoutX="410.0" layoutY="307.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="36.0" style="-fx-background-color: parent;">
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/refresh.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </Pane>
+      <TableView fx:id="tableview" layoutX="86.0" layoutY="520.0" prefHeight="350.0" prefWidth="1201.0">
+        <columns>
+          <TableColumn fx:id="customerid" minWidth="0.0" prefWidth="126.0" style="-fx-background-color: LIGHTBLUE;" text="Customer id" />
+          <TableColumn fx:id="firstname" minWidth="0.0" prefWidth="171.0" style="-fx-background-color: LIGHTBLUE;" text="First Name" />
+            <TableColumn fx:id="secondname" minWidth="0.0" prefWidth="162.0" style="-fx-background-color: LIGHTBLUE;" text="Second Name" />
+            <TableColumn fx:id="nic" minWidth="0.0" prefWidth="196.0" style="-fx-background-color: LIGHTBLUE;" text="NIC" />
+            <TableColumn fx:id="phonenumber" minWidth="0.0" prefWidth="151.0" style="-fx-background-color: LIGHTBLUE;" text="Phone Number" />
+            <TableColumn fx:id="address" minWidth="0.0" prefWidth="246.0" style="-fx-background-color: LIGHTBLUE;" text="Address" />
+            <TableColumn fx:id="city" minWidth="0.0" prefWidth="150.0" style="-fx-background-color: LIGHTBLUE;" text="City" />
+        </columns>
+      </TableView>
+      <Pane layoutY="-4.0" prefHeight="140.0" prefWidth="1440.0" style="-fx-background-color: LIGHTBLUE;">
+         <children>
+            <Text fill="WHITE" layoutX="54.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CUSTOMER">
+               <font>
+                  <Font name="Arial Black" size="50.0" />
+               </font>
+               <effect>
+                  <Glow level="0.41" />
+               </effect>
+            </Text>
+            <JFXTextField fx:id="searchtxt" alignment="CENTER" focusColor="WHITE" layoutX="1195.0" layoutY="54.0" prefHeight="32.0" prefWidth="178.0" promptText="Search" unFocusColor="#675d50">
+               <font>
+                  <Font name="System Italic" size="12.0" />
+               </font>
+            </JFXTextField>
+            <Button fx:id="searchbtn" layoutX="1373.0" layoutY="55.0" mnemonicParsing="false" onAction="#searchbtnonaction" style="-fx-background-color: transpared;">
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/magnifying-glass.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </Pane>
+      <ImageView fitHeight="442.0" fitWidth="524.0" layoutX="758.0" layoutY="62.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/satisfaction.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

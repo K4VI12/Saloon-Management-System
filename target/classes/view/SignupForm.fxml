@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="pane" prefHeight="800.0" prefWidth="1280.0" style="-fx-background-color: #26648E;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gsn.controller.SignupFormController">
+   <children>
+      <Pane layoutX="126.0" layoutY="91.0" prefHeight="618.0" prefWidth="1028.0" style="-fx-background-color: #ffff; -fx-background-radius: 30px;">
+         <children>
+            <AnchorPane layoutX="-43.0" prefHeight="618.0" prefWidth="538.0" style="-fx-background-color: #26648E;">
+               <children>
+                  <ImageView fitHeight="384.0" fitWidth="703.0" layoutX="-38.0" layoutY="140.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/GSN.1png.png" />
+                     </image>
+                  </ImageView>
+                  <Text fill="#b8feff" layoutX="124.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" text="WELCOME TO GSN">
+                     <font>
+                        <Font name="System Bold" size="45.0" />
+                     </font>
+                     <effect>
+                        <Glow level="1.0" />
+                     </effect>
+                  </Text>
+                  <Text fill="#ffe3b3" layoutX="160.0" layoutY="179.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Globle Saloon Network">
+                     <font>
+                        <Font name="System Bold" size="30.0" />
+                     </font>
+                     <effect>
+                        <Glow level="1.0" />
+                     </effect>
+                  </Text>
+                  <JFXButton fx:id="btnsignin" layoutX="235.0" layoutY="451.0" onAction="#setAigninOnAction" prefHeight="44.0" prefWidth="112.0" style="-fx-background-radius: 40; -fx-background-color: #984063;" text="Sign in" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                  </JFXButton>
+               </children>
+            </AnchorPane>
+            <Text fill="#4a4c4d" layoutX="727.0" layoutY="175.0" stroke="#2c0000" strokeType="OUTSIDE" strokeWidth="0.0" text="SIGN UP" textAlignment="CENTER" wrappingWidth="170.38482666015625">
+               <font>
+                  <Font name="System Bold" size="42.0" />
+               </font>
+               <effect>
+                  <Glow level="0.65" />
+               </effect>
+            </Text>
+            <TextField fx:id="txtFld" alignment="TOP_LEFT" layoutX="688.0" layoutY="221.0" prefHeight="42.0" prefWidth="248.0" promptText="First name" style="-fx-background-color: transparent;">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </TextField>
+            <Line endX="133.00006103515625" layoutX="803.0" layoutY="254.0" startX="-115.0" />
+            <Line endX="133.00006103515625" layoutX="803.0" layoutY="410.0" startX="-115.0" />
+            <PasswordField fx:id="txtpswd" alignment="TOP_LEFT" layoutX="688.0" layoutY="377.0" prefHeight="42.0" prefWidth="248.0" promptText="Password" style="-fx-background-color: transparent;">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </PasswordField>
+            <TextField fx:id="checkpasswordfield" layoutX="496.0" layoutY="354.0" prefHeight="42.0" prefWidth="248.0" style="-fx-background-color: transparent;" visible="false">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </TextField>
+            <JFXButton fx:id="btnsignup" layoutX="688.0" layoutY="453.0" onAction="#setSignupOnAction" style="-fx-background-radius: 40; -fx-background-color: #26648E;" text="Sign up" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+            </JFXButton>
+            <TextField fx:id="txtFld1" alignment="TOP_LEFT" layoutX="688.0" layoutY="272.0" prefHeight="42.0" prefWidth="248.0" promptText="Second name" style="-fx-background-color: transparent;">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </TextField>
+            <Line endX="133.00006103515625" layoutX="803.0" layoutY="305.0" startX="-115.0" />
+            <TextField fx:id="txtFld11" alignment="TOP_LEFT" layoutX="688.0" layoutY="324.0" prefHeight="42.0" prefWidth="248.0" promptText="Username" style="-fx-background-color: transparent;">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </TextField>
+            <Line endX="133.00006103515625" layoutX="803.0" layoutY="357.0" startX="-115.0" />
+            <ImageView fitHeight="100.0" fitWidth="122.0" layoutX="762.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/man.png" />
+               </image>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

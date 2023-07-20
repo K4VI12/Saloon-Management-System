@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="dashboard" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1440.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gsn.controller.DashboardFormController">
+   <children>
+      <VBox fx:id="lblstatus" prefHeight="900.0" prefWidth="286.0" style="-fx-background-color: #26648E;">
+         <children>
+            <Pane prefHeight="180.0" prefWidth="214.0" style="-fx-background-color: #fffff;">
+               <children>
+                  <ImageView fitHeight="171.0" fitWidth="286.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/GSN.1png.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <JFXButton fx:id="btncust" alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutX="10.0" layoutY="183.0" onAction="#setOnActioncust" prefHeight="105.0" prefWidth="286.0" text="COUSTOMERS">
+               <font>
+                  <Font name="Arial Black" size="25.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/user.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="appoitment" alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutX="10.0" layoutY="136.0" onAction="#setOnActionapmt" prefHeight="105.0" prefWidth="327.0" text="APPOINMENT">
+               <font>
+                  <Font name="Arial Black" size="25.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/assept-document.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="btnpayment" alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutX="10.0" layoutY="230.0" onAction="#setOnActionpymt" prefHeight="105.0" prefWidth="327.0" text="PAYMENT">
+               <font>
+                  <Font name="Arial Black" size="25.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/credit-card.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="btnservice" alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutX="10.0" layoutY="324.0" onAction="#setOnActionsrvis" prefHeight="105.0" prefWidth="327.0" text="SERVICE">
+               <font>
+                  <Font name="Arial Black" size="25.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/time-twenty-four.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="btnemployee" alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutX="10.0" layoutY="277.0" onAction="#setOnActionemply" prefHeight="105.0" prefWidth="327.0" text="EMPLOYEE">
+               <font>
+                  <Font name="Arial Black" size="25.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/people-carry-box.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="btnsettings" alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutX="10.0" layoutY="418.0" onAction="#setOnActionstng" prefHeight="105.0" prefWidth="327.0" text="SUPPLIER">
+               <font>
+                  <Font name="Arial Black" size="25.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/hotel-supplier.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="btnstock" alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutX="10.0" layoutY="371.0" onAction="#setOnActionStok" prefHeight="105.0" prefWidth="286.0" text="STOCK">
+               <font>
+                  <Font name="Arial Black" size="25.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/warehouse-alt.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+         </children>
+      </VBox>
+      <Pane layoutX="343.0" layoutY="190.0" prefHeight="150.0" prefWidth="250.0" style="-fx-background-color: #19A7CE; -fx-background-radius: 20;" AnchorPane.leftAnchor="343.0">
+         <children>
+            <Pane layoutX="5.0" layoutY="111.0" prefHeight="32.0" prefWidth="240.0" style="-fx-background-radius: 30; -fx-background-color: #567189;">
+               <children>
+                  <Text fill="WHITE" layoutX="92.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="More info">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <Text fill="WHITE" layoutX="14.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1024">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="14.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Customers">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Text>
+         </children>
+         <effect>
+            <DropShadow height="29.79" radius="12.93" width="23.93" />
+         </effect>
+      </Pane>
+      <Pane layoutX="605.0" layoutY="190.0" prefHeight="150.0" prefWidth="250.0" style="-fx-background-color: #1F8A70; -fx-background-radius: 20;">
+         <children>
+            <Pane layoutX="5.0" layoutY="110.0" prefHeight="32.0" prefWidth="240.0" style="-fx-background-radius: 30; -fx-background-color: #567189;">
+               <children>
+                  <Text fill="WHITE" layoutX="92.0" layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" text="More info">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <Text fill="WHITE" layoutX="14.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1024">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="14.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Appinments">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Text>
+         </children>
+         <effect>
+            <DropShadow height="29.79" radius="12.93" width="23.93" />
+         </effect>
+      </Pane>
+      <Pane layoutX="284.0" layoutY="-3.0" prefHeight="157.0" prefWidth="1157.0" style="-fx-background-color: #088395;">
+         <children>
+            <Text fill="WHITE" layoutX="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DASHBOARD">
+               <font>
+                  <Font name="System Bold" size="58.0" />
+               </font>
+               <effect>
+                  <Glow level="0.41" />
+               </effect>
+            </Text>
+            <JFXTextField alignment="CENTER" focusColor="WHITE" layoutX="920.0" layoutY="63.0" prefHeight="32.0" prefWidth="178.0" promptText="Search" unFocusColor="#675d50">
+               <font>
+                  <Font name="System Italic" size="12.0" />
+               </font>
+            </JFXTextField>
+            <Button layoutX="1098.0" layoutY="64.0" mnemonicParsing="false" style="-fx-background-color: transpared;">
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/magnifying-glass.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Text fill="WHITE" layoutX="45.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DASHBOARD">
+               <font>
+                  <Font name="Arial Black" size="50.0" />
+               </font>
+               <effect>
+                  <Glow level="0.41" />
+               </effect>
+            </Text>
+         </children>
+      </Pane>
+      <Pane layoutX="867.0" layoutY="190.0" prefHeight="150.0" prefWidth="250.0" style="-fx-background-color: #F55050; -fx-background-radius: 20;">
+         <children>
+            <Pane layoutX="5.0" layoutY="110.0" prefHeight="32.0" prefWidth="240.0" style="-fx-background-radius: 30; -fx-background-color: #567189;">
+               <children>
+                  <Text fill="WHITE" layoutX="92.0" layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" text="More info">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <Text fill="WHITE" layoutX="14.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1024">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="14.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Sales">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Text>
+         </children>
+         <effect>
+            <DropShadow height="29.79" radius="12.93" width="23.93" />
+         </effect>
+      </Pane>
+      <Pane layoutX="1129.0" layoutY="190.0" prefHeight="150.0" prefWidth="250.0" style="-fx-background-color: #E8D2A6; -fx-background-radius: 20;">
+         <children>
+            <Pane layoutX="5.0" layoutY="110.0" prefHeight="32.0" prefWidth="240.0" style="-fx-background-radius: 30; -fx-background-color: #567189;">
+               <children>
+                  <Text fill="WHITE" layoutX="92.0" layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" text="More info">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <Text fill="WHITE" layoutX="14.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1024">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="14.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Today Sales">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Text>
+         </children>
+         <effect>
+            <DropShadow height="29.79" radius="12.93" width="23.93" />
+         </effect>
+      </Pane>
+   </children>
+</AnchorPane>
